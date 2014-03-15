@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Parallax Test</title>
+
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="css/fixed-positioning.css" rel="stylesheet" type="text/css" />
+	<div id="box">
+		<div class="pure-menu pure-menu-open pure-menu-horizontal">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="webresume.html">Parallax Resume</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</head>
+
+<body>
+	<div id="bg">
+		<div id="intro" data-0="Opacity:1;top:10%;" data-1500="Opacity:0;top:-100%;">
+			<h1>Hello</h1>
+			<p>This is a preliminary test</p>
+		</div>
+		<div id="intro" data-200="opacity:1;top:100%;" data-500="top:10%;" data-800="display:block;" data-1500="opacity:0;top:-100%;">
+			<p>This is going to take a while to get it all organized.</p>
+			<p>Just hang with me for a bit here</p>
+		</div>
+		<div id="intro" data-900="top:100%;" data-1200="opacity:1;top:10%;transform:rotate(0deg);transform-origin:0 0;" data-1600="display:block;" data-2600="opacity:0;transform:rotate(-90deg);">
+			<p>Just need some more random text</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/skrollr.min.js"></script>
+
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/skrollr.min.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+	var s = skrollr.init({
+		edgeStrategy: 'set',
+		easing: {
+			WTF: Math.random,
+			inverted: function(p) {
+				return 1-p;
+			}
+		}
+	});
+	</script>
+</body>
+
+</html>
