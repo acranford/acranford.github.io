@@ -273,6 +273,9 @@ a.pure-button-primary {
     z-index:500;
     position:fixed;
 }
+.margin-right {
+    margin-right: 2em;
+}
 /*
  * -- DESKTOP (AND UP) MEDIA QUERIES --
  * On desktops and other large devices, we want to over-ride some
