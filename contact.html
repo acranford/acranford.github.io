@@ -98,8 +98,9 @@
 
         <div class="pure-g">
             <div class="l-box-lrg pure-u-1 pure-u-med-2-5">
-                <form name="contact" class="pure-form pure-form-stacked" action="doc/contact.asp" method="get">
+                <form name="contact" class="pure-form pure-form-stacked" action="http://getsimpleform.com/messages?form_api_token=c849dc5b3cf4dd739bf306b1912bceb9" method="post">
                     <fieldset>
+                        <input type='hidden' name='redirect_to' value='thankyou.html' />
 
                         <label for="name">Your Name</label>
                         <input id="name" type="text" placeholder="Your Name" required>
@@ -111,13 +112,21 @@
                         <label for="telephone">Your Number</label>
                         <input id="tel" type="tel" placeholder="Your Number">
 
-                        <button type="submit" class="pure-button">Sign Up</button>
+                        <label for="reason">Reason for Contact</label>
+                        <select id="reason">
+                            <option>Hiring</option>
+                            <option>Project</option>
+                            <option>More Info</option>
+                            <option>Interest</option>
+                        </select>
+
+                        <button type="submit" class="pure-button" value="Test form">Sign Up</button>
                     </fieldset>
                 </form>
             </div>
 
             <div class="l-box-lrg pure-u-1 pure-u-med-3-5">
-                <h4>Contact Us</h4>
+                <h4>Contact Me</h4>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
