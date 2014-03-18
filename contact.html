@@ -113,12 +113,15 @@
                         <input id="tel" type="tel" placeholder="Your Number">
 
                         <label for="reason">Reason for Contact</label>
-                        <select id="reason">
+                        <select id="reason" required>
                             <option>Hiring</option>
                             <option>Project</option>
                             <option>More Info</option>
                             <option>Interest</option>
                         </select>
+
+                        <label for="message">Your Message</label>
+                        <input id="message" type="text" placeholder="Your Message" required>
 
                         <button type="submit" class="pure-button" value="Test form">Sign Up</button>
                     </fieldset>
