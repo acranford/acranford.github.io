@@ -208,7 +208,16 @@ p {
     z-index:500;
     position:fixed;
 }
-
+.linktext {
+     display: block;
+    text-transform: uppercase;
+    font-size: 0.2em;
+    padding-bottom: 2em;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    *color: #fff;
+    text-decoration: none;
+}
 /*
  * -- TABLET MEDIA QUERIES --
  * On tablets, we want to slightly adjust the size of the banner
